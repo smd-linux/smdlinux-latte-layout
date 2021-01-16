@@ -1,2 +1,2 @@
-# smd-linux-template
-Template for Repositories
+# smdlinux-latte-layout
+Layout for the Latte dock
