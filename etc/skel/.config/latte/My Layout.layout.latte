@@ -26,24 +26,58 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.latte.plasmoid
 
+[Containments][1][Applets][2][Configuration]
+PreloadWeight=0
+
 [Containments][1][Applets][2][Configuration][General]
 isInLatteDock=true
-launchers59=applications:firefox.desktop,applications:org.kde.dolphin.desktop
+launchers59=applications:org.manjaro.pamac.manager.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:bitwarden.desktop,applications:filezilla.desktop,applications:org.kde.konsole.desktop,applications:sublime_text.desktop,applications:joplin.desktop,applications:gnucash.desktop,applications:virt-manager.desktop
 
 [Containments][1][Applets][3]
 immutability=1
 plugin=org.kde.plasma.analogclock
 
 [Containments][1][Applets][3][Configuration]
-PreloadWeight=55
+PreloadWeight=0
+
+[Containments][1][Applets][4]
+immutability=1
+plugin=org.kde.plasma.kicker
+
+[Containments][1][Applets][4][Configuration]
+PreloadWeight=5
+
+[Containments][1][Applets][4][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][Applets][4][Configuration][General]
+customButtonImage=archlinux
+favoriteSystemActions=logout
+favoritesPortedToKAstats=true
+useCustomButtonImage=true
+
+[Containments][1][Applets][5]
+immutability=1
+plugin=org.kde.milou
+
+[Containments][1][Applets][5][Configuration]
+PreloadWeight=0
+
+[Containments][1][Applets][5][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][1][ConfigDialog]
 DialogHeight=869
 DialogWidth=539
 
+[Containments][1][Configuration]
+PreloadWeight=0
+
 [Containments][1][General]
 advanced=false
-appletOrder=2;3
+appletOrder=4;5;2;3
 durationTime=x1
 panelSize=100
 panelTransparency=30
